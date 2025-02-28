@@ -1,7 +1,7 @@
 import cv2
 
 # Load a grayscale medical image
-image = cv2.imread('medical_image.jpg', cv2.IMREAD_GRAYSCALE) 
+image = cv2.imread('mri_scan.png', cv2.IMREAD_GRAYSCALE) 
 
 # Apply adaptive thresholding
 thresh = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
